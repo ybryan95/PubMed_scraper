@@ -40,7 +40,7 @@ The script then uses the Python docx library to export the data (gene names and 
 - `Document` from `docx`
 - `Image` from `PIL`
 
-> **Note:** Please ensure to update the email in `search_query` function with your own email address before running the script. You may also need to adjust the sleep time between requests to meet API guidelines. 
+> **Note:** Please ensure to update the email in `search_query` function with your own email address before running the script. You may also need to adjust the sleep time between requests to meet API guidelines (Refer to https://pubmed.ncbi.nlm.nih.gov/robots.txt).  
 
 ## Acknowledgements <a name = "acknowledgements"></a>
 
