@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white"/>
+<a href="https://allenai.github.io/scispacy/"><img src="https://img.shields.io/badge/SciSpacy-FFCA28?style=flat-square&logo=SciSpacy&logoColor=white"/>
 
 
 PubMed Gene-Search and Abstract Analysis This python script contains multiple methods aimed at fetching gene-related articles from PubMed and creating visualizations (word clouds) from the abstracts. The code extracts genes related to autism while excluding any mention of cancer or tumor.
