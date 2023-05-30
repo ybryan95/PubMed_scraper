@@ -1,5 +1,5 @@
 <a href="https://allenai.github.io/scispacy/"><img src="https://img.shields.io/badge/SciSpacy-FFCA28?style=flat-square&logo=SciSpacy&logoColor=white"/>
-<a href="https://biopython.org/docs/1.76/api/Bio.Entrez.html"><img src="https://img.shields.io/badge/BioPython.Entrez-33A0FF?style=flat-square&logo=BioPython-Entrez&logoColor=white"/><a href="https://pubmed.ncbi.nlm.nih.gov/help/"><img src="https://img.shields.io/badge/PubMed.SearchGuide-FFFFFF?style=flat-square&logo=PubMed.SearchGuide&logoColor=white"/>
+<a href="https://biopython.org/docs/1.76/api/Bio.Entrez.html"><img src="https://img.shields.io/badge/BioPython.Entrez-33A0FF?style=flat-square&logo=BioPython-Entrez&logoColor=white"/><a href="https://pubmed.ncbi.nlm.nih.gov/help/"><img src="https://img.shields.io/badge/PubMed.SearchGuide-FFFFFF?style=flat-square&logo=PubMed.SearchGuide&logoColor=black"/>
 
 
 PubMed Gene-Search and Abstract Analysis This python script contains multiple methods aimed at fetching gene-related articles from PubMed and creating visualizations (word clouds) from the abstracts. The code extracts genes related to autism while excluding any mention of cancer or tumor.
