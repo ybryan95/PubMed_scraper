@@ -8,7 +8,7 @@ This python script contains multiple methods aimed at fetching gene-related arti
 ## Table of Contents
 - [Key Functions](#key-functions)
 - [Usage](#usage)
-- [Dependencies](#dependencies)
+- [Key Dependencies](#dependencies)
 - [Acknowledgements](#acknowledgements)
 - [Disclaimer](#disclaimer)
 
