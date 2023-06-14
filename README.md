@@ -55,7 +55,7 @@ The script then uses the Python docx library to export the data (gene names and 
 
 
 
-## Dependencies <a name = "dependencies"></a>
+## Key Dependencies <a name = "dependencies"></a>
 
 - Python 3.6 or above
 - `pandas` 
