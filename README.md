@@ -26,12 +26,21 @@ The script then uses the Python docx library to export the data (gene names and 
 1. Load the required spaCy models and PubMed toolkit. Please change the email used for passing search queries to your PubMed account email.
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/f3f1a964-f1ef-4b9b-a9fa-cfd82f0521b5)
 
-3. Input the gene of interest (e.g., 'CIC') and fetch related articles from PubMed. (Ensure your choice of keywords like genes are in the first column of the TF.xlsx file and it is placed in the same folder with TF_Docx.ipynb)
+2. Input the gene of interest (e.g., 'CIC') and fetch related articles from PubMed. (Ensure your choice of keywords like genes are in the first column of the TF.xlsx file and it is placed in the same folder with TF_Docx.ipynb)
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/e4d4f63e-77bf-4c66-8db3-3b0c1c0f6045)
+3. Generate a data frame with 'gene' and 'info' columns.
+4. Iterate through the DataFrame, create a word cloud for each abstract, and append it to a Word document. The selection of keywords is performed by choosing Entity types in sci-spacy models (https://allenai.github.io/scispacy/). You will need to download their models for use in TF_Docx.ipynb
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/3df7bb11-82bf-4318-a622-c3f879f89f75)
+
+After downloading your interest in models, they are implemented through the section in the code:
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/a38296f1-9cd1-49c9-bffc-a472fc31e561)
 
 
-4. Generate a DataFrame with 'gene' and 'info' columns.
-5. Iterate through the DataFrame, create a word cloud for each abstract and append it to a Word document.
+Notice how the entity types shown on the sci-spacy page are used in the code.
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/58fd4f43-30b8-4662-9a52-61b56da49e8d)
+
+
+
 6. Save the Word document. An additional function is available to remove images and save a text-only version of the document.
 7. For example, a gene named "CIC" and its full name "Capicua Transcriptional Repressor" would generate two queries - "(CIC[Title/Abstract]) AND ((AUTISM[Title/Abstract]) OR (autistic[Title/Abstract])) NOT (CANCER[Title/Abstract]) NOT (TUMOR[Title/Abstract])" and a similar one with the full gene name.
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/c3eb8508-67b4-4e77-99b3-c38cf97fb39f)
