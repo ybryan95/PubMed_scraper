@@ -27,7 +27,8 @@ The script then uses the Python docx library to export the data (gene names and 
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/f3f1a964-f1ef-4b9b-a9fa-cfd82f0521b5)
 
 3. Input the gene of interest (e.g., 'CIC') and fetch related articles from PubMed. (Ensure your choice of keywords like genes are in the first column of the TF.xlsx file and it is placed in the same folder with TF_Docx.ipynb)
-![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/5341af3c-ad37-45b7-b2eb-e5f5afde084c)
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/e4d4f63e-77bf-4c66-8db3-3b0c1c0f6045)
+
 
 4. Generate a DataFrame with 'gene' and 'info' columns.
 5. Iterate through the DataFrame, create a word cloud for each abstract and append it to a Word document.
