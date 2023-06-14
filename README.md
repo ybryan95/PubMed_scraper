@@ -32,24 +32,24 @@ The script then uses the Python docx library to export the data (gene names and 
 4. Iterate through the DataFrame, create a word cloud for each abstract, and append it to a Word document. The selection of keywords is performed by choosing Entity types in sci-spacy models (https://allenai.github.io/scispacy/). You will need to download their models for use in TF_Docx.ipynb
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/3df7bb11-82bf-4318-a622-c3f879f89f75)
 
-After downloading your interest in models, they are implemented through the section in the code:
+**After downloading your interest in models, they are implemented through the section in the code:**
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/a38296f1-9cd1-49c9-bffc-a472fc31e561)
 
 
-Notice how the entity types shown on the sci-spacy page are used in the code.
+**Notice how the entity types shown on the sci-spacy page are used in the code.**
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/58fd4f43-30b8-4662-9a52-61b56da49e8d)
 
 
 
-6. Save the Word document. An additional function is available to remove images and save a text-only version of the document.
-7. For example, a gene named "CIC" and its full name "Capicua Transcriptional Repressor" would generate two queries - "(CIC[Title/Abstract]) AND ((AUTISM[Title/Abstract]) OR (autistic[Title/Abstract])) NOT (CANCER[Title/Abstract]) NOT (TUMOR[Title/Abstract])" and a similar one with the full gene name.
+5. Save the Word document. An additional function is available to remove images and save a text-only version of the document.
+6. For example, a gene named "CIC" and its full name "Capicua Transcriptional Repressor" would generate two queries - "(CIC[Title/Abstract]) AND ((AUTISM[Title/Abstract]) OR (autistic[Title/Abstract])) NOT (CANCER[Title/Abstract]) NOT (TUMOR[Title/Abstract])" and a similar one with the full gene name.
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/c3eb8508-67b4-4e77-99b3-c38cf97fb39f)
-To personalize the usage, I suggest practicing and getting familiar with an advanced search on PubMed (https://pubmed.ncbi.nlm.nih.gov/advanced/)
+**To personalize the usage, I suggest practicing and getting familiar with an advanced search on PubMed (https://pubmed.ncbi.nlm.nih.gov/advanced/)**
 
-For example, notice how the placement of parentheses makes the search query yield 2 or 16235 results.
+**For example, notice how the placement of parentheses makes the search query yield 2 or 16235 results.**
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/d6af717f-9084-4739-bf37-4054a6b03cb6)
 
-The search query you will be passing in the TF_Docx.ipynb provided will appear on the section of the code shown:
+**The search query you will be passing in the TF_Docx.ipynb provided will appear on the section of the code shown:**
 ![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/cf1092dc-78ea-4976-8a76-a91ca6a56975)
 
 
