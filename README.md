@@ -29,6 +29,7 @@ The script then uses the Python docx library to export the data (gene names and 
 4. Iterate through the DataFrame, create a word cloud for each abstract and append it to a Word document.
 5. Save the Word document. An additional function is available to remove images and save a text-only version of the document.
 6. For example, a gene named "CIC" and its full name "Capicua Transcriptional Repressor" would generate two queries - "(CIC[Title/Abstract]) AND ((AUTISM[Title/Abstract]) OR (autistic[Title/Abstract])) NOT (CANCER[Title/Abstract]) NOT (TUMOR[Title/Abstract])" and a similar one with the full gene name.
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/19560e57-ea5a-4ba7-817d-b4f8c2654fdc)
 
 ## Dependencies <a name = "dependencies"></a>
 
