@@ -23,13 +23,27 @@ The script then uses the Python docx library to export the data (gene names and 
 
 ## Usage <a name = "usage"></a>
 
-1. Load the required spaCy models and PubMed toolkit.
-2. Input the gene of interest (e.g., 'CIC') and fetch related articles from PubMed.
-3. Generate a DataFrame with 'gene' and 'info' columns.
-4. Iterate through the DataFrame, create a word cloud for each abstract and append it to a Word document.
-5. Save the Word document. An additional function is available to remove images and save a text-only version of the document.
-6. For example, a gene named "CIC" and its full name "Capicua Transcriptional Repressor" would generate two queries - "(CIC[Title/Abstract]) AND ((AUTISM[Title/Abstract]) OR (autistic[Title/Abstract])) NOT (CANCER[Title/Abstract]) NOT (TUMOR[Title/Abstract])" and a similar one with the full gene name.
-![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/19560e57-ea5a-4ba7-817d-b4f8c2654fdc)
+1. Load the required spaCy models and PubMed toolkit. Please change the email used for passing search queries to your PubMed account email.
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/f3f1a964-f1ef-4b9b-a9fa-cfd82f0521b5)
+
+3. Input the gene of interest (e.g., 'CIC') and fetch related articles from PubMed. (Ensure your choice of keywords like genes are in the first column of the TF.xlsx file and it is placed in the same folder with TF_Docx.ipynb)
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/5341af3c-ad37-45b7-b2eb-e5f5afde084c)
+
+4. Generate a DataFrame with 'gene' and 'info' columns.
+5. Iterate through the DataFrame, create a word cloud for each abstract and append it to a Word document.
+6. Save the Word document. An additional function is available to remove images and save a text-only version of the document.
+7. For example, a gene named "CIC" and its full name "Capicua Transcriptional Repressor" would generate two queries - "(CIC[Title/Abstract]) AND ((AUTISM[Title/Abstract]) OR (autistic[Title/Abstract])) NOT (CANCER[Title/Abstract]) NOT (TUMOR[Title/Abstract])" and a similar one with the full gene name.
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/c3eb8508-67b4-4e77-99b3-c38cf97fb39f)
+To personalize the usage, I suggest practicing and getting familiar with an advanced search on PubMed (https://pubmed.ncbi.nlm.nih.gov/advanced/)
+
+For example, notice how the placement of parentheses makes the search query yield 2 or 16235 results.
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/d6af717f-9084-4739-bf37-4054a6b03cb6)
+
+The search query you will be passing in the TF_Docx.ipynb provided will appear on the section of the code shown:
+![image](https://github.com/ybryan95/PubMed_scraping_NoGPT/assets/123009743/cf1092dc-78ea-4976-8a76-a91ca6a56975)
+
+
+
 
 ## Dependencies <a name = "dependencies"></a>
 
